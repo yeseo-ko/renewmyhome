@@ -1,5 +1,6 @@
 const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
+const fadeElements = document.querySelectorAll(".fade-up");
 
 if (menuToggle && navLinks) {
   menuToggle.addEventListener("click", () => {
@@ -13,15 +14,16 @@ if (menuToggle && navLinks) {
       menuToggle.setAttribute("aria-expanded", "false");
     });
   });
+}
 
-  const elements = document.querySelectorAll(".fade-up");
-
-window.addEventListener("scroll", () => {
-  elements.forEach(el => {
+function revealOnScroll() {
+  fadeElements.forEach((el) => {
     const rect = el.getBoundingClientRect();
     if (rect.top < window.innerHeight - 100) {
       el.classList.add("show");
     }
   });
-});
 }
+
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
