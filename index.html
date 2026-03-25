@@ -1,47 +1,158 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>YeSeo Yoo</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Psychology Graduate Applicant Portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <section class="hero">
-    <h1>YeSeo Yoo</h1>
-    <p>Psychology Graduate Applicant</p>
-    <p class="sub">경험을 바탕으로 인간의 마음을 탐구합니다.</p>
-  </section>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#" class="logo">YY</a>
 
- <section class="about">
-  <h2>About</h2>
-  <p>
-    인간의 심리와 행동의 원인에 관심을 가지고 있으며,
-    이를 체계적으로 이해하기 위해 심리학을 공부하고 있습니다.
-  </p>
-  <p>
-    대학원 진학을 목표로 기초 이론을 학습하며,
-    향후 연구를 통해 인간의 경험과 심리를 탐구하고자 합니다.
-  </p>
-</section>
+      <button class="menu-toggle" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-  <section class="research">
-    <h2>Research Interests</h2>
-    <ul>
-      <li>성트라우마와 인지 스키마</li>
-      <li>양육 스트레스와 정서 반응</li>
-      <li>초기 경험과 성인 정체성</li>
-    </ul>
-  </section>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+      </nav>
+    </div>
+  </header>
 
-  <section class="experience">
-    <h2>Experience</h2>
-    <ul>
-      <li>쇼핑몰 운영 → 소비자 심리 경험</li>
-      <li>게임 운영 → 사용자 행동에 대한 관심</li>
-      <li>육아 → 인간 발달을 가까이에서 관찰한 경험</li>
-    </ul>
-  </section>
+  <main>
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <p class="eyebrow">Psychology Graduate Applicant</p>
+        <h1>
+          YeSeo Yoo
+        </h1>
+        <p class="hero-text">
+          인간의 감정과 행동이 형성되는 과정을 탐구합니다.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#about" class="btn btn-primary">View Profile</a>
+          <a href="#research" class="btn btn-secondary">Research Interests</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container split-card">
+        <div class="image-panel about-image">
+          <div class="image-badge">About</div>
+        </div>
+
+        <div class="text-panel">
+          <p class="section-label">About</p>
+          <h2>차분하고 명확한 첫인상</h2>
+          <p>
+            이 영역에는 나중에 자기소개 문장을 넣으면 돼. 지금은 내용보다
+            레이아웃이 중요하니까, 읽기 편한 너비와 여백 위주로 잡아뒀어.
+          </p>
+          <p>
+            왼쪽에는 이미지, 오른쪽에는 소개 문장이 들어가는 구조라서
+            텍스트만 있을 때보다 훨씬 덜 심심하고 완성도 있어 보여.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="section section-soft">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Research</p>
+          <h2>관심 주제를 카드형으로 정리</h2>
+          <p class="section-desc">
+            여기는 텍스트만 길게 쓰지 말고, 핵심 키워드를 카드로 끊어서 보여주는 게 좋아.
+          </p>
+        </div>
+
+        <div class="card-grid">
+          <article class="info-card">
+            <div class="icon-circle">01</div>
+            <h3>Topic One</h3>
+            <p>
+              나중에 관심 주제 제목을 넣는 자리. 두세 줄 정도 설명이 가장 깔끔해.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <div class="icon-circle">02</div>
+            <h3>Topic Two</h3>
+            <p>
+              카드형 구조라 모바일에서는 세로로, PC에서는 가로로 자연스럽게 정렬돼.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <div class="icon-circle">03</div>
+            <h3>Topic Three</h3>
+            <p>
+              너무 복잡한 이미지보다 번호, 아이콘, 짧은 문장 조합이 훨씬 세련돼 보여.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container split-card reverse">
+        <div class="image-panel experience-image">
+          <div class="image-badge">Experience</div>
+        </div>
+
+        <div class="text-panel">
+          <p class="section-label">Experience</p>
+          <h2>이미지와 텍스트의 균형</h2>
+          <p>
+            이 구간은 경험을 적는 자리야. About과 반대로 배치해서 사이트가 단조롭게
+            안 보이게 했어.
+          </p>
+
+          <ul class="clean-list">
+            <li>실무 경험 1</li>
+            <li>실무 경험 2</li>
+            <li>관심 분야와 연결되는 경험 3</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container cta-box">
+        <p class="section-label">Next</p>
+        <h2>내용은 나중에, 뼈대는 지금</h2>
+        <p>
+          지금은 디자인과 구조를 먼저 고정하고, 문장은 나중에 다듬으면 돼.
+          이 순서가 훨씬 편하다.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 YeSeo Yoo</p>
+      <p>Built with GitHub Pages</p>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
