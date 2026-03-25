@@ -118,8 +118,8 @@ a {
   margin-top: 6px;
 }
 
-/* hero */
-.hero {
+/* hero2 */
+.hero2 {
   position: relative;
   min-height: 92vh;
   display: flex;
@@ -127,16 +127,16 @@ a {
   overflow: hidden;
 }
 
-.hero-bg {
+.hero2-bg {
   position: absolute;
   inset: 0;
   background:
     linear-gradient(rgba(245, 250, 255, 0.58), rgba(245, 250, 255, 0.78)),
-    url("hero.jpg") center center / cover no-repeat;
+    url("hero2.jpg") center center / cover no-repeat;
   filter: saturate(90%);
 }
 
-.hero-overlay {
+.hero2-overlay {
   position: absolute;
   inset: 0;
   background:
@@ -144,7 +144,7 @@ a {
     radial-gradient(circle at 10% 10%, rgba(207, 231, 255, 0.8), transparent 22%);
 }
 
-.hero-content {
+.hero2-content {
   position: relative;
   z-index: 2;
   padding: 90px 0 70px;
@@ -162,7 +162,7 @@ a {
   font-weight: 700;
 }
 
-.hero h1 {
+.hero2 h1 {
   margin: 0;
   font-size: clamp(40px, 7vw, 78px);
   line-height: 1.06;
@@ -170,14 +170,14 @@ a {
   max-width: 700px;
 }
 
-.hero-text {
+.hero2-text {
   margin: 18px 0 0;
   max-width: 640px;
   font-size: clamp(17px, 2vw, 22px);
   color: var(--muted);
 }
 
-.hero-actions {
+.hero2-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
@@ -481,11 +481,11 @@ a {
     display: flex;
   }
 
-  .hero {
+  .hero22 {
     min-height: 84vh;
   }
 
-  .hero-content {
+  .hero22-content {
     padding: 74px 0 60px;
   }
 
