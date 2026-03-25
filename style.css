@@ -501,4 +501,63 @@ a {
   .footer-inner {
     flex-direction: column;
   }
+
+  .info-card,
+.text-panel,
+.image-panel {
+  transition: all 0.25s ease;
+}
+
+.info-card:hover,
+.text-panel:hover,
+.image-panel:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.08);
+}
+
+.btn {
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  opacity: 0.95;
+}
+
+.image-panel {
+  overflow: hidden;
+}
+
+.image-panel:hover {
+  transform: scale(1.02);
+}
+
+.nav-links a {
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #5B8DEF;
+  transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
 }
